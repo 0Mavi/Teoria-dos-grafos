@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ui {
     
-    public static void menuOpcao(Scanner sc) {
+    public static int menuOpcao(Scanner sc) {
         System.out.println("""
                 Escolha uma das opções:
 
@@ -12,9 +12,11 @@ public class Ui {
                 2 - Área
                 3 - Perímetro 
                 """);
+
+        return sc.nextInt();
     }
 
-    public static void opcaoArea() {
+    public static int opcaoArea(Scanner sc) {
         System.out.println("""
                 Escolha umas das figuras:
                 
@@ -26,8 +28,9 @@ public class Ui {
                 6 - Trapézio
                 7 - Círuculo
                 """);
-    }
 
+        return sc.nextInt();
+    }
 
     public static void imprimirTraco(){
         System.out.println("-------------------------------------");
