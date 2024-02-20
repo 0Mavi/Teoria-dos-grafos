@@ -2,7 +2,6 @@ package app;
 
 import java.util.Scanner;
 
-import algoritmo.Distancia;
 import algoritmo.Forma;
 
 
@@ -29,15 +28,18 @@ public class App {
         }
 
         op = Ui.opcaoArea(sc);
+        Forma forma = null;
+      
 
         switch (op) {
             case 1:
+                forma = Ui.valorTriangulo(sc);
                 break;
             case 2:
-                Ui.valorQuadrado(sc);
+                forma = Ui.valorQuadrado(sc);
                 break;
             case 3:
-                Ui.valorRetangulo(sc);
+                forma = Ui.valorRetangulo(sc);
                 break;
             case 4:
                 break;
@@ -52,6 +54,9 @@ public class App {
           
         }
 
+
+        System.out.println(forma.area());
+        System.out.println(forma.perimetro());
      
 
         sc.close();

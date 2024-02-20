@@ -6,6 +6,7 @@ import algoritmo.Distancia;
 import algoritmo.Forma;
 import algoritmo.Quadrado;
 import algoritmo.Retangulo;
+import algoritmo.Triangulo;
 
 
 public class Ui {
@@ -56,7 +57,23 @@ public class Ui {
         System.out.println(" ");
     }
 
- 
+    public static Forma valorTriangulo(Scanner sc){
+
+        Forma forma;
+
+        System.out.println("Digite o valor do lado a: ");
+        double ladoA = sc.nextDouble();
+        System.out.println("Digite o valor do lado b: ");
+        double ladoB = sc.nextDouble();
+        System.out.println("Digite o valor do lado c: ");
+        double ladoC = sc.nextDouble();
+        System.out.println("Digite o valor da base: ");
+        double base = sc.nextDouble();
+        System.out.println("Digite o valor da altura: ");
+        double altura = sc.nextDouble();
+
+        return forma = new Triangulo(ladoA,ladoB,ladoC,base,altura);
+    }
 
     public static Forma valorQuadrado(Scanner sc){
 
