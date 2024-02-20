@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import algoritmo.Distancia;
 import algoritmo.Forma;
+import algoritmo.Losango;
 import algoritmo.Paralelogramo;
 import algoritmo.Quadrado;
 import algoritmo.Retangulo;
@@ -113,4 +114,21 @@ public class Ui {
         return forma = new Paralelogramo(ladoA,ladoB,base);
 
     }
+
+    public static Forma valorLosango(Scanner sc){
+         
+        Forma forma;
+
+        System.out.println("Digite o valor do lado: ");
+        double lado = sc.nextDouble();
+        System.out.println("Digite o valor da diagonal maior: ");
+        double diagonalMa = sc.nextDouble();
+        System.out.println("Digite o valor da diagonal menor: ");
+        double diagonalMe = sc.nextDouble();
+
+        return forma = new Losango(lado,diagonalMa,diagonalMe);
+
+    }
+
+
 }

@@ -45,6 +45,7 @@ public class App {
                 forma = Ui.valorParalelogramo(sc);
                 break;
             case 5:
+                forma = Ui.valorLosango(sc);
                 break;
             case 6:
                 break;
