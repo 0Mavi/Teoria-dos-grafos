@@ -48,6 +48,7 @@ public class App {
                 forma = Ui.valorLosango(sc);
                 break;
             case 6:
+                forma = Ui.valorTrapezio(sc);
                 break;
             case 7:
                 break;
@@ -56,7 +57,7 @@ public class App {
           
         }
 
-
+        Ui.imprimirTraco();
         System.out.println(forma.area());
         System.out.println(forma.perimetro());
      

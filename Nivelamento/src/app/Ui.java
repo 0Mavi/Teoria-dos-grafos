@@ -8,6 +8,7 @@ import algoritmo.Losango;
 import algoritmo.Paralelogramo;
 import algoritmo.Quadrado;
 import algoritmo.Retangulo;
+import algoritmo.Trapezio;
 import algoritmo.Triangulo;
 
 
@@ -130,5 +131,20 @@ public class Ui {
 
     }
 
+    public static Forma valorTrapezio (Scanner sc){
+        Forma forma;
 
+        System.out.println("Digite o valor da base maior: ");
+        double baseMa = sc.nextDouble();
+        System.out.println("Digite o valor da base menor: ");
+        double baseMe = sc.nextDouble();
+        System.out.println("Digite o valor do lado a: ");
+        double ladoA = sc.nextDouble();
+        System.out.println("Digite o valor do lado c: ");
+        double ladoC = sc.nextDouble();
+        System.out.println("Digite o valor da altura: ");
+        double altura = sc.nextDouble();
+
+        return forma = new Trapezio(ladoA, baseMe, ladoC, baseMa, altura);
+    }
 }
