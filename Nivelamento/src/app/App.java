@@ -3,7 +3,8 @@ package app;
 import java.util.Scanner;
 
 import algoritmo.Distancia;
-import algoritmo.Area;
+import algoritmo.Forma;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,22 +12,48 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         int op = Ui.menuOpcao(sc);
-
+       
         Ui.imprimirTraco();
+     
 
         switch (op) {
             case 1:
-                System.out.println("Digite 4 valores:");
-                int Xa = sc.nextInt();
-                int Xb = sc.nextInt();
-                int Ya = sc.nextInt();
-                int Yb = sc.nextInt();
-                System.out.println(Distancia.coordenada(Xa,Xb,Ya,Yb));
+                System.out.printf("%.2f",Ui.valorXeY(sc));
                 break;
-        
+
+            case 2:
+                break;
+
             default:
                 break;
         }
+
+        op = Ui.opcaoArea(sc);
+
+        switch (op) {
+            case 1:
+                break;
+            case 2:
+                Ui.valorQuadrado(sc);
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            default:
+                break;
+          
+        }
+
+     
+
+        sc.close();
        
     }
 }
