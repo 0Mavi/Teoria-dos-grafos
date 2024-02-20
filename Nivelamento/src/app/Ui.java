@@ -23,6 +23,7 @@ public class Ui {
 
                 1 - Distancia de dois pontos
                 2 - Área e Perímetro
+                3 - Sair
                 """);
 
         return sc.nextInt();
@@ -39,6 +40,7 @@ public class Ui {
                 5 - Losango
                 6 - Trapézio
                 7 - Círuculo
+                8 - Sair
                 """);
 
         return sc.nextInt();

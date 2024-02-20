@@ -65,7 +65,6 @@ public class App {
         }
 
 
-
         Ui.imprimirTraco();
         System.out.println("Area: " + forma.area());
         System.out.println("Perimetro: " + forma.perimetro());
