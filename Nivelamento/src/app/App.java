@@ -37,6 +37,7 @@ public class App {
                 Ui.valorQuadrado(sc);
                 break;
             case 3:
+                Ui.valorRetangulo(sc);
                 break;
             case 4:
                 break;

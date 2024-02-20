@@ -5,6 +5,8 @@ import java.util.Scanner;
 import algoritmo.Distancia;
 import algoritmo.Forma;
 import algoritmo.Quadrado;
+import algoritmo.Retangulo;
+
 
 public class Ui {
 
@@ -54,7 +56,7 @@ public class Ui {
         System.out.println(" ");
     }
 
-  
+ 
 
     public static Forma valorQuadrado(Scanner sc){
 
@@ -62,8 +64,20 @@ public class Ui {
 
         System.out.println("Digite o valor do lado: ");
         double lado = sc.nextDouble();
-        forma = new Quadrado(lado);
 
-        return forma;
+        return forma = new Quadrado(lado);
+
+    }
+
+    public static Forma valorRetangulo(Scanner sc){
+         
+        Forma forma;
+
+        System.out.println("Digite o valor da base: ");
+        double base = sc.nextDouble();
+        System.out.println("Digite o valor da altura: ");
+        double altura = sc.nextDouble();
+
+        return forma = new Retangulo(base,altura);
     }
 }
