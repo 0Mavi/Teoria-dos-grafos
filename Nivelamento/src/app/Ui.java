@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import algoritmo.Distancia;
 import algoritmo.Forma;
+import algoritmo.Paralelogramo;
 import algoritmo.Quadrado;
 import algoritmo.Retangulo;
 import algoritmo.Triangulo;
@@ -96,5 +97,20 @@ public class Ui {
         double altura = sc.nextDouble();
 
         return forma = new Retangulo(base,altura);
+    }
+
+    public static Forma valorParalelogramo(Scanner sc){
+         
+        Forma forma;
+
+        System.out.println("Digite o valor do lado a: ");
+        double ladoA = sc.nextDouble();
+        System.out.println("Digite o valor do lado b: ");
+        double ladoB = sc.nextDouble();
+        System.out.println("Digite o valor da base: ");
+        double base = sc.nextDouble();
+
+        return forma = new Paralelogramo(ladoA,ladoB,base);
+
     }
 }

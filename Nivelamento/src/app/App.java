@@ -42,6 +42,7 @@ public class App {
                 forma = Ui.valorRetangulo(sc);
                 break;
             case 4:
+                forma = Ui.valorParalelogramo(sc);
                 break;
             case 5:
                 break;
