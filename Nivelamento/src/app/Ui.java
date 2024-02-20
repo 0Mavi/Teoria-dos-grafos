@@ -2,6 +2,7 @@ package app;
 
 import java.util.Scanner;
 
+import algoritmo.Circulo;
 import algoritmo.Distancia;
 import algoritmo.Forma;
 import algoritmo.Losango;
@@ -147,4 +148,17 @@ public class Ui {
 
         return forma = new Trapezio(ladoA, baseMe, ladoC, baseMa, altura);
     }
+
+    public static Forma valorCirculo(Scanner sc){
+
+        Forma forma;
+
+        System.out.println("Digite o valor do raio: ");
+        double raio = sc.nextDouble();
+
+        return forma = new Circulo(raio);
+
+    }
+
+    
 }

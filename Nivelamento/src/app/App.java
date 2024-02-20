@@ -24,10 +24,13 @@ public class App {
                 break;
 
             default:
+                System.out.println("Adios!");
+                System.exit(0);
                 break;
         }
 
         op = Ui.opcaoArea(sc);
+        System.out.println("");
         Forma forma = null;
       
 
@@ -51,15 +54,21 @@ public class App {
                 forma = Ui.valorTrapezio(sc);
                 break;
             case 7:
+                forma = Ui.valorCirculo(sc);
                 break;
             default:
+                System.out.println("Adios!");
+                forma = null;
+                System.exit(0);
                 break;
           
         }
 
+
+
         Ui.imprimirTraco();
-        System.out.println(forma.area());
-        System.out.println(forma.perimetro());
+        System.out.println("Area: " + forma.area());
+        System.out.println("Perimetro: " + forma.perimetro());
      
 
         sc.close();
